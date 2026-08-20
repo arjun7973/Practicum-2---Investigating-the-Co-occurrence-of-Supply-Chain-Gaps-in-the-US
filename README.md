@@ -90,7 +90,8 @@ States are colored by community detection.
 
 **State-State Co-occurrence Network**
 
-<img width="950" height="605" alt="image" src="https://github.com/user-attachments/assets/2b1d8b9b-8893-4d41-8a5f-580f93397a90" />
+<img width="707" height="714" alt="image" src="https://github.com/user-attachments/assets/362030d8-3a03-4b7a-9cf6-29e581a6fcb6" />
+
 
 ### Data Aggregation for TCN {#data-aggregation-for-tcn-state-state}
 
@@ -151,7 +152,7 @@ Sectors are colored by community detection. Node labels represent 2-digit NAICS 
 
 **Sector-Sector Co-occurrence Network** 
 
-<img width="1281" height="1074" alt="image" src="https://github.com/user-attachments/assets/d484616a-5963-4bd9-ad08-b2d7e98187a0" />
+<img width="850" height="665" alt="image" src="https://github.com/user-attachments/assets/9dd53112-c403-4072-bd68-9947d6b37ff1" />
 
 
 ### Data Aggregation for TCN {#data-aggregation-for-tcn-sector-sector}
@@ -216,7 +217,7 @@ Units are colored by community detection. Node labels are in 'STATE_NAICS_CODE' 
 
 **State-Sector Co-occurrence Network**
 
-<img width="1726" height="1617" alt="image" src="https://github.com/user-attachments/assets/f3d9980a-bc20-4626-867e-d69f67621e79" />
+<img width="1136" height="1043" alt="image" src="https://github.com/user-attachments/assets/4a331b7d-01ad-4572-a59e-1e26300b1f4e" />
 
 
 ### Cross-Sectoral Co-occurrence Network (Closure vs. Entry) {#cross-sectoral-co-occurrence-network-closure-vs-entry}
