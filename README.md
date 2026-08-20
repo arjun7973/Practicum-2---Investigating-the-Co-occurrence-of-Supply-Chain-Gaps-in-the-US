@@ -104,50 +104,36 @@ A Temporal Convolutional Network (TCN) is built and trained to predict state-sta
 
 | Metric            | Value    |
 | :---------------- | :------- |
-| Test Loss         | 0.5659   |
-| Test Accuracy     | 0.6806   |
-| Test AUC          | 0.7858   |
+| Test Loss         | 0.6316   |
+| Test Accuracy     | 0.6558   |
+| Test AUC          | 0.7151   |
 
 **Classification Report (State-State)**
 
 ```
               precision    recall  f1-score   support
 
-           0       0.92      0.65      0.76      3762
-           1       0.38      0.80      0.51      1012
+           0       0.87      0.65      0.75      4202
+           1       0.35      0.67      0.46      1188
 
-    accuracy                           0.68      4774
-   macro avg       0.65      0.72      0.64      4774
-weighted avg       0.81      0.68      0.71      4774
+    accuracy                           0.66      5390
+   macro avg       0.61      0.66      0.60      5390
+weighted avg       0.76      0.66      0.68      5390
 ```
 
 **Confusion Matrix (State-State)**
 
-<img width="528" height="470" alt="image" src="https://github.com/user-attachments/assets/16013aef-9650-48e3-88d0-924bfc6e8d4b" />
+<img width="528" height="470" alt="image" src="https://github.com/user-attachments/assets/994250cf-e846-4bf1-acd1-bc2cb4107cc0" />
 
 
 ### Feature Importance {#feature-importance-state-state}
 
 Permutation feature importance based on AUC drop:
 
-| Feature                       | Importance (AUC Drop) |
-| :---------------------------- | :-------------------- |
-| reallocation_rate_diff        | 0.1205                |
-| employment_density_diff       | 0.1043                |
-| income_diff                   | 0.0817                |
-| population_yoy_diff           | 0.0421                |
-| population_diff               | 0.0400                |
-| closure_rate_firms_diff       | 0.0380                |
-| lag1_closure_rate_diff        | 0.0212                |
-| net_job_creation_rate_diff    | 0.0157                |
-| closure_rate_diff             | 0.0137                |
-| income_yoy_diff               | 0.0099                |
-| emp_diff                      | 0.0094                |
-| job_destruction_rate_diff     | 0.0092                |
-| employment_yoy_diff           | 0.0089                |
-| ma3_job_destruction_rate_diff | 0.0088                |
-| lag2_closure_rate_diff        | 0.0056                |
-| ma3_closure_rate_diff         | 0.0054                |
+<img width="990" height="630" alt="image" src="https://github.com/user-attachments/assets/681f2b83-0abf-42fd-a8ca-3c5397b64378" />
+
+
+
 
 ## 4. Sector-Sector Co-occurrence Modeling
 
@@ -180,50 +166,35 @@ A TCN model is applied to predict sector-sector co-occurrence, with a sequence l
 
 | Metric            | Value    |
 | :---------------- | :------- |
-| Test Loss         | 0.3573   |
-| Test Accuracy     | 0.7714   |
-| Test AUC          | 0.8078   |
+| Test Loss         | 0.3760   |
+| Test Accuracy     | 0.8688   |
+| Test AUC          | 0.6130   |
 
 **Classification Report (Sector-Sector)**
 
 ```
               precision    recall  f1-score   support
 
-           0       0.92      0.81      0.86       682
-           1       0.25      0.49      0.33        88
+           0       0.91      0.95      0.93       704
+           1       0.03      0.02      0.02        66
 
-    accuracy                           0.77       770
-   macro avg       0.59      0.65      0.60       770
-weighted avg       0.85      0.77      0.80       770
+    accuracy                           0.87       770
+   macro avg       0.47      0.48      0.47       770
+weighted avg       0.84      0.87      0.85       770
 ```
 
 **Confusion Matrix (Sector-Sector)**
 
-<img width="528" height="470" alt="image" src="https://github.com/user-attachments/assets/6fb83fb7-4cf9-4961-bb2d-97f7ee813f84" />
+<img width="528" height="470" alt="image" src="https://github.com/user-attachments/assets/12826f79-03a0-413b-bf41-23d7eb6fffef" />
+
 
 
 ### Feature Importance {#feature-importance-sector-sector}
 
 Permutation feature importance based on AUC drop for sector-level model:
 
-| Feature                       | Importance (AUC Drop) |
-| :---------------------------- | :-------------------- |
-| reallocation_rate_diff        | 0.0310                |
-| lag2_closure_rate_diff        | 0.0306                |
-| job_destruction_rate_diff     | 0.0267                |
-| population_yoy_diff           | 0.0260                |
-| emp_diff                      | 0.0167                |
-| income_diff                   | 0.0147                |
-| closure_rate_firms_diff       | 0.0144                |
-| lag1_closure_rate_diff        | 0.0121                |
-| ma3_job_destruction_rate_diff | 0.0118                |
-| closure_rate_diff             | 0.0117                |
-| income_yoy_diff               | 0.0090                |
-| ma3_closure_rate_diff         | 0.0086                |
-| employment_density_diff       | 0.0075                |
-| population_diff               | 0.0060                |
-| employment_yoy_diff           | 0.0058                |
-| net_job_creation_rate_diff    | 0.0002                |
+<img width="989" height="630" alt="image" src="https://github.com/user-attachments/assets/9fb57c2f-95b2-4c4f-94b5-eea23df14d59" />
+
 
 ## 5. State-Sector Co-occurrence Modeling
 
